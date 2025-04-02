@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa Bootstrap</title>
+    <link rel="stylesheet" href="./Lib/bootstrap.min.css">
+    <style>
+        .carousel-item img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .nav-link {
+            text-align: center; 
+        }
+
+        section {
+            padding-top: 80px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: rgb(76, 170, 252);
+            z-index:2;
+        }
+
+        .card img {
+            width: 100%;
+            height: 400px;
+        }
+
+        footer {
+            background-color: rgb(76, 170, 252);
+            text-align:center;
+            justify-content: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg sticky-top">
+                <div class="container">
+                    <h1>EscoLada</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end " id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active"  href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aprender">Quero aprender</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+            </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho"> 
+        <section id="home">
+            <div class="container">
+                
+                <div id="carouselExemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/11/19/16/36/mountain-climbing-1840220_1280.jpg" alt="">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/03/09/22/49/ice-climbing-1247606_1280.jpg" alt="">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/04/18/19/20/climbing-2240157_1280.jpg" alt="">
+                        </div>
+                    </div>
+                    <button type="button" class=" carousel-control-prev" data-bs-target="#carouselExemplo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <button type="button" class=" carousel-control-next" data-bs-target="#carouselExemplo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+        </section>
+        <section id="aprender">
+            <div class="container">
+                <h1> Quero aprender! </h1>
+                <h2> Seu nível é...</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="card">
+                            <img src="https://cdn.pixabay.com/photo/2017/10/22/20/48/climbing-wall-2879227_1280.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title"> Iniciante</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorem fuga quibusdam molestiae accusamus in iste praesentium eos nesciunt explicabo laboriosam, distinctio quo ut officia excepturi dicta maiores unde hic?
+                                </p>
+                                <a href="#" class="btn btn-primary"> Quero saber mais!</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-8">
+                            <div class="card">
+                                <img src="https://cdn.pixabay.com/photo/2017/10/01/15/29/climb-2805903_1280.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title"> Intermediário</h4>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorem fuga quibusdam molestiae accusamus in iste praesentium eos nesciunt explicabo laboriosam, distinctio quo ut officia excepturi dicta maiores unde hic?
+                                    </p>
+                                    <a href="#" class="btn btn-primary"> Quero saber mais!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-8">
+                            <div class="card">
+                                <img src="https://cdn.pixabay.com/photo/2018/11/23/18/05/capricorn-3834296_1280.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title"> Avançado</h4>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorem fuga quibusdam molestiae accusamus in iste praesentium eos nesciunt explicabo laboriosam, distinctio quo ut officia excepturi dicta maiores unde hic?
+                                    </p>
+                                    <a href="#" class="btn btn-primary"> Quero saber mais!</a>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="row align-items-center"> 
+        
+                    <div class="col-md-6" id="about">
+                        <h2>Quem somos</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, odit dolores, iusto temporibus delectus iure facere dolore beatae explicabo veritatis esse impedit magni, aperiam mollitia voluptatem ut? Nostrum, atque officiis!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, id. Adipisci iusto illum dicta, non temporibus ipsa quasi itaque. Nam aut accusantium incidunt voluptas rerum aperiam labore excepturi facilis vel!
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://cdn.pixabay.com/photo/2018/04/07/07/51/rock-climbing-wall-3297942_960_720.jpg"  class="img-fluid w-80" alt="Escalada">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Entre em contato com a gente!</h1>
+                                <div id="form" >
+                                    <div class="accordion-body">
+                                        <form>
+                                            <label class="form-label" for="nome"> Seu nome:</label>
+                                            <input class="form-control" type="text" id="nome">
+                                            <label for="email" class="form-label"> Seu e-mail:</label>
+                                            <input id="email" type="email" class="form-control">
+                                            <label for="mensagem" class="form-label">Sua mensagem:</label>
+                                            <textarea id="mensagem" class="form-control"></textarea>
+                                            <div class="form-check form-switch mt-3">
+                                                <input class="form-check-input" type="checkbox" id="aceito-termos">
+                                                <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+</div>
+<footer>
+    <b>&copy 2025 Matheus Audan - Todos os direitos reservados</b>
+
+</footer>
+<script src="./Lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
